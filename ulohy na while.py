@@ -40,3 +40,10 @@ while meno != "koniec":
 name = str(input("Zadaj meno: "))
 pocet = len(name)
 print(f"Tvoje meno ma {pocet} znakov.")
+
+podlazie = 0
+osoby = 2
+while osoby < 10:
+    osoby += 3
+    podlazie += 1
+print(f"Podlazie: {podlazie}\nOsoby: {osoby}")
