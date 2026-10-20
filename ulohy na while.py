@@ -78,3 +78,19 @@ while kg < max_kg:
     print(f"Hmotnost ludi dokopy: {kg}")
     print(f"Pocet osob:{pocet_osob}")
 print("Vytah presiahol nosnost.")
+
+import random
+interval_min = int(input("Zadaj najmensie cislo intervalu: "))
+interval_max = int(input("Zadaj najvacsie cislo intervalu: "))
+cislo = int(input(f"Zadaj cislo ktore program uhadne od {interval_min} do {interval_max}: "))
+tip = 0
+if cislo < interval_min or cislo > interval_max or interval_max > interval_max:
+    if cislo < interval_min or cislo > interval_max:
+        print("cislo nie je v intervale")
+    else:
+        print("zadali ste interval naopak")
+else:
+    while tip != cislo:
+        tip = random.randint(0, 35)
+        print(tip)
+    print(f"pocitac uhadol cislo: {tip}")
