@@ -47,3 +47,34 @@ while osoby < 10:
     osoby += 3
     podlazie += 1
 print(f"Podlazie: {podlazie}\nOsoby: {osoby}")
+
+poschodie = 0
+while poschodie < 7:
+    poschodie += 1
+    print(f"poschodie: {poschodie}")
+print("Vytah zastavil.")
+
+pocet_osob = 0
+kg = 0
+max_kg = 400
+while kg < max_kg:
+    clovek_kg = int(input("Zadaj hmotnost cloveka: "))
+    kg += clovek_kg
+    pocet_osob += 1
+    print(f"Hmotnost ludi dokopy: {kg}")
+    print(f"Pocet osob:{pocet_osob}")
+print("Vytah presiahol nosnost.")
+
+import random
+osoba_kg = 0
+pocet_osob = 0
+kg = 0
+max_kg = 400
+while kg < max_kg:
+    osoba_kg = random.randint(50, 100)
+    pocet_osob += 1
+    print(f"{pocet_osob}. osoba ma hmotnost: {osoba_kg}")
+    kg += osoba_kg
+    print(f"Hmotnost ludi dokopy: {kg}")
+    print(f"Pocet osob:{pocet_osob}")
+print("Vytah presiahol nosnost.")
