@@ -1,4 +1,3 @@
-
 #vypis cisla od 1 do 20 a jeho vzajomne nasobky
 for i in range(1,21):
     print(f"{i} {i*i}")
@@ -94,3 +93,24 @@ else:
         tip = random.randint(interval_min, interval_max)
         print(tip)
     print(f"pocitac uhadol cislo: {tip}")
+
+cislo = int(input("Zadaj cislo: "))
+sucet = 0
+while cislo > 0:
+    cifra = cislo % 10
+    sucet += cifra
+    cislo //= 10
+print(f"Sucet cifier je {sucet}.")
+
+#len parne
+cislo = int(input("Zadaj cislo: "))
+sucet = 0
+while cislo > 0:
+    if cislo % 2 == 0:
+        cifra = cislo % 10
+        sucet += cifra
+        cislo //= 10
+    else:
+        cifra = cislo % 10
+        cislo //= 10
+print(f"Sucet cifier je {sucet}.")
