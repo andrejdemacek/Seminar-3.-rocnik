@@ -91,6 +91,6 @@ if cislo < interval_min or cislo > interval_max or interval_max > interval_max:
         print("zadali ste interval naopak")
 else:
     while tip != cislo:
-        tip = random.randint(0, 35)
+        tip = random.randint(interval_min, interval_max)
         print(tip)
     print(f"pocitac uhadol cislo: {tip}")
