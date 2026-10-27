@@ -111,3 +111,14 @@ while cislo > 0:
         sucet += cifra
     cislo //= 10
 print(f"Sucet cifier je {sucet}.")
+
+port math
+cislo = int(input("Zadaj cislo: "))
+delitele = 0
+for i in range(2, int(math.sqrt(cislo))):
+    if cislo % i == 0:
+        delitele += 1
+        print("Nie je to prvocislo.")
+        break
+if delitele == 0:
+    print("Prvocislo ako repa.")
