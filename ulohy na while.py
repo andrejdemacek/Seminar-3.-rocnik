@@ -106,11 +106,8 @@ print(f"Sucet cifier je {sucet}.")
 cislo = int(input("Zadaj cislo: "))
 sucet = 0
 while cislo > 0:
+    cifra = cislo % 10
     if cislo % 2 == 0:
-        cifra = cislo % 10
         sucet += cifra
-        cislo //= 10
-    else:
-        cifra = cislo % 10
-        cislo //= 10
+    cislo //= 10
 print(f"Sucet cifier je {sucet}.")
