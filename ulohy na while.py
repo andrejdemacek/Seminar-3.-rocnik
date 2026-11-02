@@ -1,4 +1,3 @@
-"""
 #vypis cisla od 1 do 20 a jeho vzajomne nasobky
 for i in range(1,21):
     print(f"{i} {i*i}")
@@ -162,7 +161,7 @@ while cislo > 0:
     cislo_otocene = cislo_otocene * 10 + cifra
     cislo //= 10
 if cislo_povodne < 0:
-    cislo_otocene = 0 - cislo_otocene
+    cislo_otocene = -cislo_otocene
     print(f"Cislo {cislo_povodne} odzadu je {cislo_otocene}.")
 else:
     print(f"Cislo {cislo_povodne} odzadu je {cislo_otocene}.")
@@ -287,7 +286,7 @@ for i in range(2, int(math.sqrt(cislo))):
         break
 if delitele == 0:
     print("Prvocislo ako repa.")
-"""
+
 #11
 n = int(input("Zadaj cislo: "))
 print("Prvociselny rozklad:", end=" ")
