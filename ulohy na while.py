@@ -353,10 +353,16 @@ while True:
 from random import randint as rnd
 print(end = "")
 pocet = 0
+a/m = input('Zadaj "a" (automaticke) alebo "m" (manualne(enterom po jednom)).') 
 while True:
     a, b, c = [int(rnd(0, 10)), int(rnd(0, 10)), int(rnd(0, 10))]
-#   input() #moze sa vymenit s print
-    print() #moze sa vymenit s input
+    if a/m == "a":
+        print()
+    elif a/m == "m":
+        input()
+    else:
+        print("Neznama hodnota")
+        break
     if a == 7 and b == 7 and c == 7:
         print()
         print("*" * 7,)
