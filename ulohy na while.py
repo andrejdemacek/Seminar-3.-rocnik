@@ -325,3 +325,46 @@ while n > 1:
     else:
         n = 3 * n + 1
 print(1)
+
+from random import randint as rnd
+while True:
+    cislo = int(rnd(0, 50))
+    if cislo != 0:
+        if cislo % 2 == 0:
+            print(f"Cislo {cislo} je parne.")
+        else:
+            print(f"Cislo {cislo} je neparne.")
+    else:
+        print("Padla 0.")
+        break
+
+from random import randint as rnd
+while True:
+    a = int(rnd(1, 20))
+    b = int(rnd(1, 20))
+    if a == b:
+        print(f"cislo {a} = cislo {b}")
+        break
+    elif a > b:
+        print(f"cislo {a} > cislo {b}")
+    else:
+        print(f"cislo {a} < cislo {b}")
+
+from random import randint as rnd
+print(end = "")
+pocet = 0
+while True:
+    a, b, c = [int(rnd(0, 10)), int(rnd(0, 10)), int(rnd(0, 10))]
+#   input() #moze sa vymenit s print
+    print() #moze sa vymenit s input
+    if a == 7 and b == 7 and c == 7:
+        print()
+        print("*" * 7,)
+        print(f"*{a},{b},{c}*")
+        print("*" * 7)
+        print(f"Prehal si {pocet}-krat.")
+        print()
+        break
+    else:
+        print(f"{a},{b},{c}", end = "")
+        pocet += 1
