@@ -355,14 +355,7 @@ pocet = 0
 print(end = "")
 a_m = input('Zadaj "a" (automaticke) alebo "m" (manualne(enterom po jednom)).\n')
 while True:
-    a, b, c = [int(rnd(0, 10)), int(rnd(0, 10)), int(rnd(0, 10))]
-    if a_m == "a":
-        print()
-    elif a_m == "m":
-        input()
-    else:
-        print("Neznama hodnota.")
-        break
+    a, b, c = [int(rnd(0, 10)), int(rnd(0, 10)), int(rnd(0, 10))]
     if a == 7 and b == 7 and c == 7:
         print()
         print("*" * 7,)
@@ -373,4 +366,11 @@ while True:
         break
     else:
         print(f"{a},{b},{c}", end = "")
+        if a_m == "a":
+            print()
+        elif a_m == "m":
+            input()
+        else:
+            print("Neznama hodnota.")
+            break
         pocet += 1
