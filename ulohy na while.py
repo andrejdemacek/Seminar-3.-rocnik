@@ -351,17 +351,17 @@ while True:
         print(f"cislo {a} < cislo {b}")
 
 from random import randint as rnd
-print(end = "")
 pocet = 0
-a/m = input('Zadaj "a" (automaticke) alebo "m" (manualne(enterom po jednom)).') 
+a_m = input('Zadaj "a" (automaticke) alebo "m" (manualne(enterom po jednom)).')
+print(end = "")
 while True:
     a, b, c = [int(rnd(0, 10)), int(rnd(0, 10)), int(rnd(0, 10))]
-    if a/m == "a":
+    if a_m == "a":
         print()
-    elif a/m == "m":
+    elif a_m == "m":
         input()
     else:
-        print("Neznama hodnota")
+        print("Neznama hodnota.")
         break
     if a == 7 and b == 7 and c == 7:
         print()
