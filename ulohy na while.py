@@ -352,8 +352,8 @@ while True:
 
 from random import randint as rnd
 pocet = 0
-a_m = input('Zadaj "a" (automaticke) alebo "m" (manualne(enterom po jednom)).')
 print(end = "")
+a_m = input('Zadaj "a" (automaticke) alebo "m" (manualne(enterom po jednom)).')
 while True:
     a, b, c = [int(rnd(0, 10)), int(rnd(0, 10)), int(rnd(0, 10))]
     if a_m == "a":
