@@ -326,6 +326,8 @@ while n > 1:
         n = 3 * n + 1
 print(1)
 
+#Napíš program, ktorý bude náhodne generovať čísla (0-50), dovtedy pokial si nevygeneruje 0.
+Medzitým bude vypísovať,či sú čísla párne alebo nepárne, kým nepadne 0.
 from random import randint as rnd
 while True:
     cislo = int(rnd(0, 50))
@@ -338,6 +340,8 @@ while True:
         print("Padla 0.")
         break
 
+#Napíš program, ktorý bude generovať dve náhodné čísla od 1-20. Bude ich generovať dovtedy, pokiaľ nebudú rovnaké. Ak budú rovnaké generovanie sa skončí. Keď nebudú rovné, program, bude určovať,
+ktoré je menšie alebo väčšie.
 from random import randint as rnd
 while True:
     a = int(rnd(1, 20))
