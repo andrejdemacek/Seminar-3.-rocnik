@@ -339,8 +339,7 @@ while True:
         print("Padla 0.")
         break
 
-#Napíš program, ktorý bude generovať dve náhodné čísla od 1-20. Bude ich generovať dovtedy, pokiaľ nebudú rovnaké. Ak budú rovnaké generovanie sa skončí. Keď nebudú rovné, program, bude určovať,
-ktoré je menšie alebo väčšie.
+#Napíš program, ktorý bude generovať dve náhodné čísla od 1-20. Bude ich generovať dovtedy, pokiaľ nebudú rovnaké. Ak budú rovnaké generovanie sa skončí. Keď nebudú rovné, program, bude určovať, ktoré je menšie alebo väčšie.
 from random import randint as rnd
 while True:
     a = int(rnd(1, 20))
