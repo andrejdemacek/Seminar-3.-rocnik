@@ -1,0 +1,36 @@
+"""
+znamky = [1, 2, 3, 4, 5]
+print(znamky[2])
+
+ovocie = ['banan', 'jablko', 'mango', 'kaki','ananas' ]
+print(ovocie[3])
+print(ovocie[-2])
+print(ovocie[1:4])
+
+# 1) Vytvor zoznam cisla, ktorý bude obsahovať hodnoty 5, 10, 15, 20, 25. Vypíš celý zoznam, jeho prvý ,posledný a predposledný prvok.
+cisla = [5, 10, 15, 20 ,25]
+n = 0
+print(cisla)
+while n >= -2:
+    print(cisla[n])
+    n -= 1
+
+# 2) Máme zoznam: farby = ["cervena", "modra", "zelena"] Zmeň druhý prvok na "zlta" a vypíš upravený zoznam.
+farby = ["cervena", "modra", "zelena"]
+farby.pop(1)
+farby.insert(1,"zlta")
+print(farby)
+
+# 3) Vytvor zoznam mena s tromi menami. Pridaj štvrté meno pomocou append(), odstráň jedno meno pomocou remove() a vypíš počet zostávajúcich prvkov.
+mena = ['Mikulas', 'Frederik', 'Dalibor']
+mena.append(input('Zadaj meno: '))
+mena.remove('Mikulas')
+print(f'Pocet prvkov: {len(mena)}')
+
+from random import randint
+mena = ['Mikulas', 'Frederik', 'Dalibor']
+mena.append(input('Zadaj meno: '))
+mena.pop(randint(0, len(mena) - 1))
+print(f'Pocet prvkov: {len(mena)}')
+print(mena)
+"""
