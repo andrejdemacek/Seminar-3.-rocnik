@@ -33,4 +33,51 @@ mena.append(input('Zadaj meno: '))
 mena.pop(randint(0, len(mena) - 1))
 print(f'Pocet prvkov: {len(mena)}')
 print(mena)
+
+cisla = [12 ,725 ,3 ,25 ,95 ,31]
+for i in cisla:
+    print(i)
+print()
+for z in range(len(cisla)):
+    print(cisla[z])
+print()
+h = 0
+while h < len(cisla):
+    print(cisla[h])
+    h += 1
+print()
+
+znamky = []
+for i in range(5):
+    znamka = int(input("Znamka: "))
+    znamky.append(znamka)
+print("Znamky su: ",znamky)
+print("Priemer je: ", sum(znamky) / len(znamky))
+
+z = [int(input("Znamka: ")) for i in range(5)]
+print(z)
+
+#Úloha 1) Vytvor zoznam cisla = [3, 6, 9, 12, 15] a pomocou cyklu for vypíš všetky jeho prvky, každý na samostatný riadok.
+cisla = [3, 6, 9, 12, 15]
+for i in cisla:
+    print(i)
+
+#Úloha 2) Vytvor zoznam mena = ["Adam", "Eva", "Peter", "Jana"] a pomocou cyklu while vypíš všetky mená.
+mena = ["Adam", "Eva", "Peter", "Jana"]
+i = 0
+while i < len(mena):
+    print(mena[i])
+    i += 1
+
+#Úloha 3) Máš zoznam cisla = [4, 8, 12, 16, 20]. Pomocou cyklu for vypočítaj súčet všetkých čísel. Nepoužívaj funkciu sum().
+cisla = [4, 8, 12, 16, 20]
+sucet = 0
+for i in cisla:
+    sucet += i
+print(sucet)
+
+#Úloha 4) Máš zoznam cisla = [3, 8, 11, 14, 17, 20]. Pomocou cyklu for a podmienky if vypíš iba párne čísla.
+cisla = [3, 8, 11, 14, 17, 20]
+parne = [x for x in cisla if x % 2 == 0]
+print (parne)
 """
